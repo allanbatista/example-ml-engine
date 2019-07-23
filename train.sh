@@ -14,7 +14,7 @@ JOB_NAME=${MODEL_NAME}_${CURRENT_DATE}
 JOB_DIR="$TRAIN_PATH/job/"
 
 gcloud ai-platform jobs submit training ${JOB_NAME} \
-        --scale-tier=standard-1 \
+        --scale-tier=basic-gpu \
         --job-dir=${JOB_DIR} \
         --runtime-version=1.14 \
         --python-version=3.5 \

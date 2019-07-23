@@ -6,7 +6,7 @@ from tensorflow.keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2
 from tensorflow.keras import backend as K
 
 
-def build_model(batch_size=128, epochs=20):
+def build_model(batch_size=128, epochs=10):
     num_classes = 10
 
     # input image dimensions

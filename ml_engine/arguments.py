@@ -1,23 +1,20 @@
 import argparse
 
 
-class Arguments:
-    def __init__(self, params):
-        self.params = params
+def build():
+    ap = argparse.ArgumentParser()
 
-    @property
-    def job_id(self):
-        return self.params.job_dir
+    ap.add_argument(
+        '--job-dir',
+        help='jobs staging path on google cloud storage',
+        required=True
+    )
 
-    @staticmethod
-    def build():
-        ap = argparse.ArgumentParser()
+    ap.add_argument(
+        '--job-name',
+        help='set job name',
+        required=True
+    )
 
-        ap.add_argument(
-            '--job-dir',
-            help='jobs staging path on google cloud storage',
-            required=True
-        )
-
-        return Arguments(ap.parse_args())
+    return ap.parse_args()
 
