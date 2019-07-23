@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ml_engine
+Version: 0.0.0
+Summary: ml engine project example
+Home-page: https://github.com/allanbatista/example-ml-engine
+Author: Allan Batista
+Author-email: allan@allanbatista.com.br
+License: MIT
+Description: ml engine project example
+Platform: google cloud ml engine
